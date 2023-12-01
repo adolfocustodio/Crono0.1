@@ -6,5 +6,6 @@ from django.conf import settings
 
 urlpatterns = [
     path("", include("core.urls", namespace="core")),
+    path("", include("postagem.urls", namespace="postagem")),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
