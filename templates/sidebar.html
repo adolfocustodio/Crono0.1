@@ -1,22 +1,20 @@
-<nav>
-    <div>
-        <a class="nav_link h5 me-1" href="{% url 'core:home' %}">
-            <i class="bi bi-house"></i>
-            <span class="ms-1">Início</span>
-        </a>
-        <a class="nav_link h5 me-1" href="{% url 'core:home' %}">
-            <i class="bi bi-bookmark"></i>
-            <span class="ms-1">Salvos</span>
-        </a>
-    </div>
-    <div>
-        <a class="nav_link h5" href="">
-            <i class="bi bi-person"></i>
-            <span class="ms-1">Perfil</span>
-        </a>
-        <a class="nav_link h5" href="{% url 'core:home' %}">
-            <i class="bi bi-gear"></i>
-            <span class="ms-1">Ajustes</span>
-        </a>
+<nav class="d-flex position-fixed">
+    <div class="sidebar offcanvas offcanvas-end p-3" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div>
+            <a class="align-items-center d-flex h5 link-primary mb-3" href="{% url 'core:home' %}">
+                <i class="bi bi-house me-1"></i>
+                Início
+            </a>
+            <a class="align-items-center d-flex link-primary h5 mb-3" href="#">
+                <i class="bi bi-bookmark me-1"></i>
+                Salvos
+            </a>
+        </div>
+        <div>
+            <a class="align-items-center d-flex link-primary h5 mb-0" href="#">
+                <i class="bi bi-gear me-1"></i>
+                Ajustes
+            </a>
+        </div>
     </div>
 </nav>
